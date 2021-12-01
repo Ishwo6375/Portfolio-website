@@ -118,8 +118,9 @@ nav .container ul li a:hover {
 }
 
 nav .container ul li a.active {
-  background: yellow;
-  color: var(--color-black);
+  
+
+  color: var(--color-warning);
 }
 /*  ###### Hero Section css */
 

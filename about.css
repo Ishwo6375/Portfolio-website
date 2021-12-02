@@ -62,15 +62,21 @@ section.about .container .read-more:hover {
 /* ######## Skills section css starts ###### */
 
 section.skills .container .skill-icon img{
-    width: 60px;
-    height: 60px;
-    align-items: center;
+    width: 55px;
+    height: 55px;
+  align-items: center;
+  gap: 1rem;
+    
+  
+   
 }
+
+
 
 section.skills .container{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
+ 
  
   grid-auto-rows: minmax(100px, auto);
   

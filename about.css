@@ -49,7 +49,6 @@ section.about .container .read-more {
 }
 
 section.about h1 {
-  
   font-family: "Lobster", cursive;
 }
 
@@ -61,28 +60,55 @@ section.about .container .read-more:hover {
 
 /* ######## Skills section css starts ###### */
 
-section.skills .container .skill-icon img{
-    width: 55px;
-    height: 55px;
+section.skills .container .skill-icon img {
+  width: 55px;
+  height: 55px;
   align-items: center;
-  gap: 1rem;
-    
-  
-   
 }
 
-
-
-section.skills .container{
+section.skills .container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
- 
- 
+
   grid-auto-rows: minmax(100px, auto);
-  
 }
 
+.box {
+  width: 40%;
+  padding: 40px;
+  background-color: black;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+  color: #ffff;
+  border-radius: 9px;
+  margin: auto;
+}
 
+.progress {
+  width: 100%;
+  background-color: rgba(56, 49, 49);
+  border-radius: 10px;
+  margin: 18px 0px;
+  height: 25px;
+}
 
+.progress-bar {
+  height: 100%;
+  width: 0%;
+  background-color: rgba(19, 117, 124);
+  border-radius: 10px;
+  position: relative;
+  transition: all 1.5s;
+}
 
+.progress-bar span {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+}
 
+@media (max-width: 500px) {
+  .box {
+    display: grid;
+    width: 100%;
+  }
+}

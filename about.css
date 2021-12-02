@@ -1,5 +1,5 @@
 /* Google font Lobster */
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,700;1,400;1,600&family=M+PLUS+1+Code:wght@300;400;500;600;700&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,300;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,600;1,700;1,900&family=Roboto+Slab:wght@400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,700;1,400;1,600&family=M+PLUS+1+Code:wght@300;400;500;600;700&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,300;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,600;1,700;1,900&family=Roboto+Slab:wght@400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap");
 
 :root {
   --transition: all 300ms ease;
@@ -13,60 +13,70 @@
   --color-light: #f4f4f4;
 }
 
-section.about{
-    background: var(--color-black);
+section.about {
+  background: var(--color-black);
 }
 
-section.about .container{
-    display: grid;
-    grid-template-columns: 26rem auto;
-    gap: 5rem;
+/* ####### About Section css */
+
+section.about .container {
+  display: grid;
+  grid-template-columns: 26rem auto;
+  gap: 5rem;
 }
 
-section.about p{
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
+section.about p {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
 }
 
-.info p a{
-    color: rgb(248, 233, 26);
-   
+.info p a {
+  color: rgb(248, 233, 26);
 }
-section.about .container .read-more-content{
-    display: none;
+section.about .container .read-more-content {
+  display: none;
+}
+
+section.about .container .read-more {
+  display: block;
+  margin: 1rem 0 2rem;
+  color: var(--color-white);
+  font-size: 1.2rem;
+}
+
+.info a {
+  font-weight: bold;
+}
+
+section.about h1 {
+  
+  font-family: "Lobster", cursive;
+}
+
+section.about .container .read-more:hover {
+  text-decoration: underline;
+}
+
+/* #### About section css ends##### */
+
+/* ######## Skills section css starts ###### */
+
+section.skills .container .skill-icon img{
+    width: 60px;
+    height: 60px;
+    align-items: center;
+}
+
+section.skills .container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+ 
+  grid-auto-rows: minmax(100px, auto);
+  
 }
 
 
 
-section.about .container .read-more{
-    display: block;
-    margin: 1rem 0 2rem;
-    color: var(--color-white);
-    font-size: 1.2rem;
-    
-}
 
-.info a{
-    font-weight: bold;
-    
-   
-}
-
-section.about h1{
-    text-align: center;
-    padding: 100px;
-    font-family: 'Lobster', cursive;
-}
-
-section.about .container .read-more:hover{
-   text-decoration: underline; 
-   
-}
-
-section .image img{
-    width: 350px;
-    height: 440px;
-    margin-top: 10px;
-    border-radius: 30px;
-}
 

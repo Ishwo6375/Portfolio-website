@@ -209,13 +209,15 @@ section.landing .info p {
 
 .btn {
   padding: 15px;
+  width: 12rem;
   margin-top: 20px;
-  border-radius: 1rem;
+  border-radius: .7rem;
   background-color: var(--color-warning);
 }
 
 .btn a {
   color: var(--color-black);
+ 
   font-size: 1.2rem;
   font-weight: 500;
   font-family: "M PLUS 1 Code", sans-serif;

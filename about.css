@@ -66,6 +66,12 @@ section.skills .container .skill-icon img {
   align-items: center;
 }
 
+
+section.skills{
+    margin-top: -4rem;
+    font-size: 1rem;
+}
+
 section.skills .container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -76,7 +82,7 @@ section.skills .container {
 .box {
   width: 40%;
   padding: 40px;
-  background-color: black;
+  
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
   color: #ffff;
   border-radius: 9px;
@@ -94,7 +100,7 @@ section.skills .container {
 .progress-bar {
   height: 100%;
   width: 0%;
-  background-color: rgba(19, 117, 124);
+  background: linear-gradient(rgba(105, 117, 170, 0.959), rgba(7, 108, 148, 0.9));
   border-radius: 10px;
   position: relative;
   transition: all 1.5s;
@@ -106,9 +112,39 @@ section.skills .container {
   right: 0%;
 }
 
+.box p{
+   font-weight: bold;
+   color: yellow;
+    font-family: "Lobster", cursive;
+}
+
 @media (max-width: 500px) {
   .box {
     display: grid;
     width: 100%;
   }
+
+  section.skills .container .skill-icon img {
+    width: 35px;
+    height: 35px;
+    margin-left: 19px;
+  }
+  section.skills h1{
+font-size: 1.5rem;
+  }
+}
+
+/* ###### Project section CSS ###### */
+
+.btn-2{
+   padding: 15px;
+  width: 12rem;
+  margin-top: 20px;
+  border-radius: .7rem;
+  background-color: var(--color-dark);
+  color: var(--color-light);
+ 
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: "M PLUS 1 Code", sans-serif;
 }

@@ -136,6 +136,52 @@ font-size: 1.5rem;
 
 /* ###### Project section CSS ###### */
 
+#projects{
+  padding: 10rem 0;
+}
+#projects .item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 15rem;
+}
+
+#projects .item:nth-child(even){
+  flex-direction: row-reverse;
+}
+
+#projects .item .left{
+  flex: 1;
+}
+
+#projects .item .right{
+  flex: 1;
+  margin-left: -150px;
+  background-color: var(--color-black);
+  padding: 5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 20px white;
+  z-index: 2;
+}
+#projects .item:nth-child(even) .right{
+  margin-left: 0;
+}
+
+#projects .item:nth-child(even) .left{
+  margin-left:  -150px;
+}
+#projects .item .left .img img{
+  height: 400px;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0px 0px 20px var(--color-light);
+   object-fit: cover;
+}
+
+
+
 .btn-2{
    padding: 15px;
   width: 12rem;
@@ -143,8 +189,16 @@ font-size: 1.5rem;
   border-radius: .7rem;
   background-color: var(--color-dark);
   color: var(--color-light);
- 
   font-size: 1.2rem;
   font-weight: 500;
   font-family: "M PLUS 1 Code", sans-serif;
+}
+
+.btn-2:hover{
+   background-color: rgb(12, 219, 226);
+   color: black;
+}
+
+.btn-2 i{
+  padding: 5px;
 }

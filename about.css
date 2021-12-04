@@ -66,10 +66,9 @@ section.skills .container .skill-icon img {
   align-items: center;
 }
 
-
-section.skills{
-    margin-top: -4rem;
-    font-size: 1rem;
+section.skills {
+  margin-top: -4rem;
+  font-size: 1rem;
 }
 
 section.skills .container {
@@ -82,7 +81,7 @@ section.skills .container {
 .box {
   width: 40%;
   padding: 40px;
-  
+
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
   color: #ffff;
   border-radius: 9px;
@@ -100,7 +99,10 @@ section.skills .container {
 .progress-bar {
   height: 100%;
   width: 0%;
-  background: linear-gradient(rgba(105, 117, 170, 0.959), rgba(7, 108, 148, 0.9));
+  background: linear-gradient(
+    rgba(105, 117, 170, 0.959),
+    rgba(7, 108, 148, 0.9)
+  );
   border-radius: 10px;
   position: relative;
   transition: all 1.5s;
@@ -112,10 +114,10 @@ section.skills .container {
   right: 0%;
 }
 
-.box p{
-   font-weight: bold;
-   color: yellow;
-    font-family: "Lobster", cursive;
+.box p {
+  font-weight: bold;
+  color: yellow;
+  font-family: "Lobster", cursive;
 }
 
 @media (max-width: 500px) {
@@ -129,184 +131,130 @@ section.skills .container {
     height: 35px;
     margin-left: 19px;
   }
-  section.skills h1{
-font-size: 1.5rem;
+  section.skills h1 {
+    font-size: 1.5rem;
   }
 }
 
 /* ###### Project section CSS ###### */
 
-#projects{
+#projects {
   padding: 10rem 0;
 }
-#projects .item{
+#projects .item {
   display: flex;
   align-items: center;
   justify-content: center;
   max-width: 800px;
   margin: 0 auto;
   margin-bottom: 15rem;
+  /* gap: 2rem; */
 }
-
-
- 
-  
-
-.section-heading{
-  text-align: center;
-  font-size: 3.8rem;
-  display: block;
-  margin-bottom: 5rem;
-}
-
-#projects .item:nth-child(even){
+#projects .item:nth-of-type(even) {
   flex-direction: row-reverse;
 }
-
-#projects .item .left{
+#projects .item .left {
   flex: 1;
 }
-
-#projects .item .right{
+#projects .item .right {
+  margin-right: -150px;
   flex: 1;
- 
-  margin-left: -150px;
-  background-color: var(--color-black);
-  padding: 5rem 2rem;
+  background-color: var(--body-bg);
+  padding: 5rem 3rem;
   border-radius: 12px;
-  box-shadow: 0 0 20px white;
+  box-shadow: 0px 0px 20px #00000028;
   z-index: 2;
 }
-#projects .item:nth-child(even) .right{
-  margin-left: 0;
+#projects .item:nth-of-type(even) .left {
+  margin-left: 150px;
 }
 
-#projects .item:nth-child(even) .left{
-  margin-left:  -150px;
-}
-#projects .item .left .img{
- 
+#projects .item .left .img {
+  height: 500px;
+
   overflow: hidden;
   border-radius: 12px;
-  box-shadow: 0px 0px 20px var(--color-light);
-   
-   position: relative;
+  overflow: hidden;
+  box-shadow: 0px 0px 20px #4705fc33;
+  position: relative;
+  object-fit: cover;
 }
-
-#projects .item .left .img img{
- height: 300px;
- object-fit: cover;
- transition: var(--transition);
-}
-
-#projects .item .left .img::after{
+#projects .item .left .img::after {
+  content: "";
   position: absolute;
-  content: '';
   left: 0;
+  top: 0;
   height: 100%;
   width: 100%;
   background-color: #5a24ed38;
 }
-
-#projects .item:hover .left .img img{
+#projects .item .left .img img {
+  object-fit: cover;
+  height: 100%;
+  
+  transition: 0.3s ease transform;
+}
+#projects .item:hover .left .img img {
   transform: scale(1.1);
   z-index: 1;
 }
-
-#projects .item .right .project-title{
+#projects .item .right .project-title {
   font-size: 2.5rem;
-  color: var(--color-warning);
-   font-family: "Lobster", cursive;
-   margin-bottom: 1rem;
-   object-fit: cover;
+  font-family: "Montserrat";
+  margin-bottom: 1rem;
 }
-
-#projects .item .right .project-sub-title{
-  font-size: 1.6rem;
-  margin-bottom: 2rem;
-}
-
-#projects .item .right .project-desc {
-  color:var(--color-light);
-  margin-bottom: 3rem;
-}
-
-.btn-2{
-   padding: 15px;
-  width: 12rem;
+.btn-2 {
+  color: rgb(238, 222, 5);
+  margin-left: 10px;
+  
+  padding: 15px;
+  width: 10rem;
   margin-top: 20px;
   border-radius: .7rem;
   background-color: var(--color-dark);
-  color: var(--color-light);
-  font-size: 1.2rem;
-  font-weight: 500;
-  font-family: "M PLUS 1 Code", sans-serif;
 }
 
-.btn-2:hover{
-   background-color: rgb(12, 219, 226);
-   color: black;
-}
-
-.btn-2 i{
-  padding: 5px;
-}
-
-@media only screen and (max-width: 768px){
- #projects .item{
-   flex-direction: column;
-  
- } 
-
- #projects .item .left{
-   width: 100%;
-  
- }
-
- 
-
- #projects .item:nth-child(even){
-   flex-direction: column;
- }
-
- #projects .item:nth-child(even) .left{
-   margin-left: 0;
- }
-
- #projects .item .right {
-  width: 100%;
-  height: 50%;
-   font-size: .8rem;
-   margin-left: 5px;
-   margin-bottom: -20px;
-   margin-top: -50px;
-   height: -10rem;
-   
-  
- }
-
- .btn-2{
-     padding:15px;
-  width: 14rem;
- 
-  
-  border-radius: .7rem;
-  background-color: var(--color-dark);
-  color: var(--color-light);
-  font-size: .8rem;
-  font-weight: 500;
-  font-family: "M PLUS 1 Code", sans-serif;
- }
-
- 
-#projects .item .right .project-title{
-  font-size: 1.5rem;
- 
-}
-
-#projects .item .right .project-sub-title{
-  font-size: 1rem;
+.btn-2 i {
+  color: white;
+  margin-right: .5rem;
 }
 
 
+
+#projects .item .right .project-sub-title {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+#projects .item .right .project-desc {
+  color: var(--secondary-gray);
+  margin-bottom: 3rem;
+}
+
+@media only screen and (max-width: 768px) {
+  #projects .item {
+    flex-direction: column;
+  }
+  #projects .item .left {
+    width: 100%;
+  }
+  #projects .item .right {
+    margin-left: 0;
+    width: 90%;
+    margin-top: -150px;
+  }
+  #projects .item:nth-of-type(even) {
+    flex-direction: column;
+  }
+  #projects .item:nth-of-type(even) .left {
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 450px) {
+  #projects .item .right .buttons {
+    flex-direction: column;
+  }
+  #projects .item .right .buttons a {
+    width: 100%;
+    text-align: center;
+  }
 }

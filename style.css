@@ -294,3 +294,78 @@ section.landing .profile-area .inner-circle {
   border-radius: 50%;
   overflow: hidden;
 }
+
+/* ##### Media Queries (Phones) */
+
+@media screen and (max-width: 600px){
+  h1{
+    font-size: 2.2rem;
+  }
+  h2{
+    font-size: 1.6rem;
+  }
+  h3{
+  font-size: 1.2rem;
+  }
+  h4{
+    font-size: 1rem;
+  }
+  h5{
+    font-size: 0.68;
+  }
+
+  /* ###### NavBar */
+nav{
+  box-shadow: 0 1rem 1rem var(--color-white);
+}
+  nav h3{
+    margin-left: 1rem;
+  }
+
+  nav.container{
+    width: 100%;
+
+  }
+
+  nav .container ul {
+    position: fixed;
+    top: 0;
+    flex-direction: column;
+    z-index: 3;
+    width: 16rem;
+    margin-left: -2.6rem;
+    height: 100vh;
+    background: var(--color-dark);
+    box-shadow: 1rem 0 2rem var(--color-dark);
+    display: none;
+  }
+
+  nav ul li{
+    height: 4.6rem;
+    width: 100%;
+  }
+
+  nav .container ul li a{
+    width: 100%;
+    justify-content: start;
+    padding-left: 2rem;
+  }
+
+  nav .container ul li a:hover{
+    padding-left: 3rem;
+
+  }
+
+  nav button {
+    display: inline-block;
+    cursor: pointer;
+    background: transparent;
+    color: var(--color-light);
+    margin-right: 1rem;
+  }
+
+  nav button#close-btn{
+    display: none;
+  }
+
+}

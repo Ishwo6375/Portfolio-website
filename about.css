@@ -147,14 +147,21 @@ section.skills .container {
   justify-content: center;
   max-width: 800px;
   margin: 0 auto;
-  margin-bottom: 15rem;
+  margin-bottom: 6rem;
   /* gap: 2rem; */
 }
-#projects .item:nth-of-type(even) {
-  flex-direction: row-reverse;
+section  .section-heading{
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 4rem;
+  
 }
+
+
+
 #projects .item .left {
   flex: 1;
+  
 }
 #projects .item .right {
   margin-right: -150px;
@@ -165,12 +172,10 @@ section.skills .container {
   box-shadow: 0px 0px 20px #00000028;
   z-index: 2;
 }
-#projects .item:nth-of-type(even) .left {
-  margin-left: 150px;
-}
 
 #projects .item .left .img {
-  height: 500px;
+  height: 350px;
+  width: 520px;
 
   overflow: hidden;
   border-radius: 12px;
@@ -189,7 +194,7 @@ section.skills .container {
   background-color: #5a24ed38;
 }
 #projects .item .left .img img {
-  object-fit: cover;
+  object-fit: center;
   height: 100%;
   
   transition: 0.3s ease transform;
@@ -230,7 +235,7 @@ section.skills .container {
   margin-bottom: 3rem;
 }
 
-@media only screen and (max-width: 768px) {
+/* @media only screen and (max-width: 768px) {
   #projects .item {
     flex-direction: column;
   }
@@ -257,4 +262,7 @@ section.skills .container {
     width: 100%;
     text-align: center;
   }
-}
+} */
+
+/* ####### Project section media queries ### */
+

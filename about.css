@@ -121,6 +121,28 @@ section.skills .container {
 }
 
 @media (max-width: 500px) {
+
+  section.about{
+    margin-top: -5rem;
+  }
+
+  section.about .container {
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  text-align: center;
+  
+}
+
+section.about .container .info p{
+  font-size: 1.1rem;
+}
+
+section.about .container .image img{
+  width: 80%;
+}
+
+
+  
   .box {
     display: grid;
     width: 100%;

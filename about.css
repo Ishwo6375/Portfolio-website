@@ -148,6 +148,17 @@ font-size: 1.5rem;
   margin-bottom: 15rem;
 }
 
+
+ 
+  
+
+.section-heading{
+  text-align: center;
+  font-size: 3.8rem;
+  display: block;
+  margin-bottom: 5rem;
+}
+
 #projects .item:nth-child(even){
   flex-direction: row-reverse;
 }
@@ -158,6 +169,7 @@ font-size: 1.5rem;
 
 #projects .item .right{
   flex: 1;
+ 
   margin-left: -150px;
   background-color: var(--color-black);
   padding: 5rem 2rem;
@@ -172,15 +184,52 @@ font-size: 1.5rem;
 #projects .item:nth-child(even) .left{
   margin-left:  -150px;
 }
-#projects .item .left .img img{
-  height: 400px;
+#projects .item .left .img{
+ 
   overflow: hidden;
   border-radius: 12px;
   box-shadow: 0px 0px 20px var(--color-light);
+   
+   position: relative;
+}
+
+#projects .item .left .img img{
+ height: 300px;
+ object-fit: cover;
+ transition: var(--transition);
+}
+
+#projects .item .left .img::after{
+  position: absolute;
+  content: '';
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #5a24ed38;
+}
+
+#projects .item:hover .left .img img{
+  transform: scale(1.1);
+  z-index: 1;
+}
+
+#projects .item .right .project-title{
+  font-size: 2.5rem;
+  color: var(--color-warning);
+   font-family: "Lobster", cursive;
+   margin-bottom: 1rem;
    object-fit: cover;
 }
 
+#projects .item .right .project-sub-title{
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
 
+#projects .item .right .project-desc {
+  color:var(--color-light);
+  margin-bottom: 3rem;
+}
 
 .btn-2{
    padding: 15px;
@@ -201,4 +250,63 @@ font-size: 1.5rem;
 
 .btn-2 i{
   padding: 5px;
+}
+
+@media only screen and (max-width: 768px){
+ #projects .item{
+   flex-direction: column;
+  
+ } 
+
+ #projects .item .left{
+   width: 100%;
+  
+ }
+
+ 
+
+ #projects .item:nth-child(even){
+   flex-direction: column;
+ }
+
+ #projects .item:nth-child(even) .left{
+   margin-left: 0;
+ }
+
+ #projects .item .right {
+  width: 100%;
+  height: 50%;
+   font-size: .8rem;
+   margin-left: 5px;
+   margin-bottom: -20px;
+   margin-top: -50px;
+   height: -10rem;
+   
+  
+ }
+
+ .btn-2{
+     padding:15px;
+  width: 14rem;
+ 
+  
+  border-radius: .7rem;
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  font-size: .8rem;
+  font-weight: 500;
+  font-family: "M PLUS 1 Code", sans-serif;
+ }
+
+ 
+#projects .item .right .project-title{
+  font-size: 1.5rem;
+ 
+}
+
+#projects .item .right .project-sub-title{
+  font-size: 1rem;
+}
+
+
 }

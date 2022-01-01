@@ -37,6 +37,9 @@ section.about .container .read-more-content {
   display: none;
 }
 
+section.about .container .read-more-content.show-content {
+  display: block;
+}
 section.about .container .read-more {
   display: block;
   margin: 1rem 0 2rem;

@@ -333,8 +333,8 @@ section.landing .profile-area .inner-circle {
     width: 16rem;
     margin-left: -2.6rem;
     height: 100vh;
-    background: var(--color-dark);
-    box-shadow: 1rem 0 2rem var(--color-dark);
+    background: var(--color-black);
+   
    display:none;
   }
 

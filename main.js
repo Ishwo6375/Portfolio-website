@@ -15,6 +15,24 @@ closeBtn.addEventListener('click', () =>{
 })
 
 
+const navItems = menu.querySelectorAll('li');
+
+const changeActiveItem = () => {
+   navItems.forEach(item => {
+       const link = item.querySelector('a');
+       link.classList.remove('active');
+   }) 
+}
+
+navItems.forEach(item => {
+   const link = item.querySelector('a'); 
+   link.addEventListener('click', () => {
+       changeActiveItem();
+       link.classList.add('active');
+   })
+})
+
+
 
 window.addEventListener('load', () => {
     let progressBars = document.querySelectorAll('.progress-bar');

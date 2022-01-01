@@ -335,7 +335,7 @@ section.landing .profile-area .inner-circle {
     height: 100vh;
     background: var(--color-dark);
     box-shadow: 1rem 0 2rem var(--color-dark);
-    display: none;
+   display:none;
   }
 
   nav ul li{
@@ -365,6 +365,8 @@ section.landing .profile-area .inner-circle {
   nav button#close-btn{
     display: none;
   }
+
+
 
   /* ######## Hero Section media queries ##### */
   section.landing {

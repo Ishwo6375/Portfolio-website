@@ -321,3 +321,37 @@ section  .section-heading{
 
 /* #####  End of Project section CSS ####### */
 
+section.contact{
+  padding: 0;
+  max-width: 100vw;
+}
+
+
+/* ###### Contact Me CSS ######### */
+section.contact{
+  padding: 0;
+  max-width: 100vw;
+}
+
+
+section.contact .overlay{
+  width: 100%;
+  height: 100%;
+  background: black;
+  padding: 10rem 0 7rem;
+}
+
+section.contact .container{
+  width: 40%;
+}
+
+section.contact .container h1{
+  margin: 0;
+  color: var(--color-light);
+}
+
+section.contact .container p{
+  text-align: center;
+  color: var(--color-light);
+}
+

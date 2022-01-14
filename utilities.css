@@ -124,28 +124,24 @@ section.skills .container {
 }
 
 @media (max-width: 500px) {
-
-  section.about{
+  section.about {
     margin-top: -5rem;
   }
 
   section.about .container {
-  grid-template-columns: 1fr;
-  gap: 1rem;
-  text-align: center;
-  
-}
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    text-align: center;
+  }
 
-section.about .container .info p{
-  font-size: 1.1rem;
-}
+  section.about .container .info p {
+    font-size: 1.1rem;
+  }
 
-section.about .container .image img{
-  width: 80%;
-}
+  section.about .container .image img {
+    width: 80%;
+  }
 
-
-  
   .box {
     display: grid;
     width: 100%;
@@ -175,18 +171,14 @@ section.about .container .image img{
   margin-bottom: 6rem;
   /* gap: 2rem; */
 }
-section  .section-heading{
+section .section-heading {
   font-size: 4rem;
   text-align: center;
   margin-bottom: 4rem;
-  
 }
-
-
 
 #projects .item .left {
   flex: 1;
-  
 }
 #projects .item .right {
   margin-right: -150px;
@@ -221,7 +213,7 @@ section  .section-heading{
 #projects .item .left .img img {
   object-fit: center;
   height: 100%;
-  
+
   transition: 0.3s ease transform;
 }
 #projects .item:hover .left .img img {
@@ -236,20 +228,18 @@ section  .section-heading{
 .btn-2 {
   color: rgb(238, 222, 5);
   margin-left: 10px;
-  
+
   padding: 15px;
   width: 10rem;
   margin-top: 20px;
-  border-radius: .7rem;
+  border-radius: 0.7rem;
   background-color: var(--color-dark);
 }
 
 .btn-2 i {
   color: white;
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
-
-
 
 #projects .item .right .project-sub-title {
   font-size: 1.6rem;
@@ -260,79 +250,70 @@ section  .section-heading{
   margin-bottom: 3rem;
 }
 
-
-
 /* ####### Project section media queries ### */
 
-@media (max-width: 500px){
-
-  #projects{
+@media (max-width: 500px) {
+  #projects {
     margin-top: -13rem;
   }
-  #projects .section-heading{
-   font-size: 2rem;
-   
-  
+  #projects .section-heading {
+    font-size: 2rem;
   }
-  #projects .container .all-items .item .left .img{
-   object-fit: center;
-  width: 80%;
-  margin-left: 2.5rem;
-  height: 60vw;
-  transition: 0.3s ease transform;
+  #projects .container .all-items .item .left .img {
+    object-fit: center;
+    width: 80%;
+    margin-left: 2.5rem;
+    height: 60vw;
+    transition: 0.3s ease transform;
   }
 
-  #projects .container .all-items .item{
+  #projects .container .all-items .item {
     margin-top: -2rem;
   }
 
-  #projects .container .all-items .item .right{
-   width: 100%;
-   height: 100%;
-  
+  #projects .container .all-items .item .right {
+    width: 100%;
+    height: 100%;
   }
 
-  #projects .container .all-items .item .right .project-title{
+  #projects .container .all-items .item .right .project-title {
     font-size: 1.5rem;
     margin-top: -2rem;
     text-align: center;
   }
-  #projects .container .all-items .item .right .project-sub-title{
+  #projects .container .all-items .item .right .project-sub-title {
     font-size: 1.1rem;
-     text-align: center;
+    text-align: center;
   }
 
-   #projects .container .all-items .item .right .project-desc{
-     font-size: .9rem;
-     font-weight: 500;
-   text-align: center;
-   overflow: hidden;
-   }
+  #projects .container .all-items .item .right .project-desc {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: center;
+    overflow: hidden;
+  }
 
-   .buttons {
+  .buttons {
     display: flex;
     justify-content: center;
     align-items: center;
-   
-   }
+  }
 
-   .btn-2{
-     font-size: .7rem;
-   }
-
+  .btn-2 {
+    font-size: 0.7rem;
+  }
 }
 
 /* #####  End of Project section CSS ####### */
 
-section.contact{
+section.contact {
   padding: 0;
   max-width: 100vw;
   margin-top: -5rem;
 }
 
-
 /* ###### Contact Me CSS ######### */
-section.contact{
+section.contact {
   background: linear-gradient(rgba(14, 15, 15, 0.1), rgba(19, 13, 22, 1)),
     url("./images/contact-us2.jpeg");
   background-size: cover;
@@ -342,33 +323,34 @@ section.contact{
 }
 
 section.contact .over {
- width: 100%;
- height: 100%;
- padding: 10rem 0 7rem;
- background: rgba(0,0,0,0.4);
+  width: 100%;
+  height: 100%;
+  padding: 10rem 0 7rem;
+  background: rgba(0, 0, 0, 0.4);
 }
 
-section.contact .container{
+section.contact .container {
   width: 40%;
 }
 
-section.contact .container h1{
+section.contact .container h1 {
   margin: 0;
   color: var(--color-light);
   text-align: center;
 }
 
-section.contact .container p{
+section.contact .container p {
   text-align: center;
   color: var(--color-light);
   opacity: 0.8;
 }
 
-section.contact form{
+section.contact form {
   margin-top: 3rem;
 }
 
-section.contact form input, section.contact form textarea{
+section.contact form input,
+section.contact form textarea {
   display: block;
   width: 100%;
   margin: 0.5rem 0;
@@ -385,26 +367,25 @@ section.contact form textarea:focus {
   color: var(--color-black);
 }
 
-section.contact form textarea{
+section.contact form textarea {
   height: 10rem;
 }
 
 section.contact form input::placeholder,
-section.contact form textarea::placeholder{
- color: var(--color-light);
+section.contact form textarea::placeholder {
+  color: var(--color-light);
 }
 
-section.contact form .btn-primary{
+section.contact form .btn-primary {
   width: 10rem;
   border: none;
   background: yellow;
   color: black;
   margin: 2rem auto 0;
   font-weight: bold;
-  
 }
 
-section.contact form .btn-primary:hover{
+section.contact form .btn-primary:hover {
   background: #525252;
   color: white;
   cursor: pointer;
@@ -412,3 +393,29 @@ section.contact form .btn-primary:hover{
 
 /* ##### Contact Page Css ends ####### */
 
+/* ##### Contact section Media queries ### */
+
+@media (max-width: 500px) {
+  .container h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: -10rem;
+  }
+  .container p {
+    font-size: 1.2rem;
+    text-align: justify;
+  }
+  form{
+   
+   width: 280px;
+   margin-left: -3rem;
+   height: 100%;
+  }
+section.contact form .btn-primary{
+  font-size: 1rem;
+  padding: 1.2rem;
+  width: 50%;
+  height: 100%;
+}
+  
+}

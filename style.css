@@ -385,11 +385,14 @@ section.landing .profile-area .inner-circle {
 
   section.landing .container .socials{
     display: none;
+  
   }
 
   section.landing .container .info{
     width: 80%;
   margin: 0 auto;
+   font-size: 1.7rem;
+  font-weight: bold;
   }
 
   section.landing .container .info h1{
@@ -400,7 +403,7 @@ section.landing .profile-area .inner-circle {
     margin: 0 auto;
     width: 100%;
     font-weight: 400;
-    font-size: 1.rem;
+    font-size: 1.1rem;
     line-height: 1.3;
     
  

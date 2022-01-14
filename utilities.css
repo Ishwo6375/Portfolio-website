@@ -27,7 +27,8 @@ section.about .container {
 
 section.about p {
   margin-bottom: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
+  font-weight: bold;
 }
 
 .info p a {
@@ -64,6 +65,10 @@ section.about h1 span{
 
 section.about .container .read-more:hover {
   text-decoration: underline;
+}
+
+.show-more-p{
+  font-size: 1.3rem;
 }
 
 /* #### About section css ends##### */

@@ -52,7 +52,14 @@ section.about .container .read-more {
 }
 
 section.about h1 {
-  font-family: "Lobster", cursive;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: bold;
+ 
+ 
+}
+
+section.about h1 span{
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 section.about .container .read-more:hover {
@@ -120,7 +127,8 @@ section.skills .container {
 .box p {
   font-weight: bold;
   color: yellow;
-  font-family: "Lobster", cursive;
+  font-size: 1.4rem;
+
 }
 
 @media (max-width: 500px) {

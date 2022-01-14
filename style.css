@@ -203,7 +203,7 @@ section.landing h3 span{
 section.landing .info p {
   width: 45rem;
   font-family: "M PLUS 1 Code", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: var(--color-light);
 }
 
@@ -385,14 +385,11 @@ section.landing .profile-area .inner-circle {
 
   section.landing .container .socials{
     display: none;
-  
   }
 
   section.landing .container .info{
     width: 80%;
   margin: 0 auto;
-   font-size: 1.7rem;
-  font-weight: bold;
   }
 
   section.landing .container .info h1{
@@ -402,9 +399,10 @@ section.landing .profile-area .inner-circle {
   section.landing .container .info p {
     margin: 0 auto;
     width: 100%;
+    font-size: 1.3rem;
+    text-align: center;
     font-weight: 400;
-    font-size: 1.1rem;
-    line-height: 1.3;
+    line-height: 1.2;
     
  
   }

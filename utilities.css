@@ -473,20 +473,20 @@ footer{
 
 
 
-ul{
+.flex-row ul{
   margin-bottom: 32px;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-li{
+.flex-row li{
   padding: 0 15px;
   margin-bottom: 16px;
 }
 
 .footer-p{
   text-align: center;
-  margin-top: -3rem;
+  
 }
 
 

@@ -450,7 +450,7 @@ footer{
 .flex-row li a{
   color: rgb(11, 211, 194);
   padding: 20px;
-  font-family: 1rem;
+  
   font-weight: 500;
   font-size: 20px;
 }
@@ -488,6 +488,21 @@ footer{
   text-align: center;
   
 }
+
+/* footer media queries */ 
+
+@media (min-width: 300px){
+  .flex-row li a{
+   color: white;
+   font-size: 15px;
+   padding: 0px;
+  }
+}
+
+
+
+
+
 
 
 

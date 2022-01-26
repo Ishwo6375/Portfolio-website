@@ -84,6 +84,11 @@ section.skills .container .skill-icon img {
 section.skills {
   margin-top: -4rem;
   font-size: 1rem;
+  	background: linear-gradient(rgba(14, 15, 15, 0.5), rgba(19, 13, 22, 1)),
+    url("https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-size: cover;
+  background-position: center;
+  
 }
 
 section.skills .container {
@@ -158,6 +163,8 @@ section.skills .container {
   .box {
     display: grid;
     width: 100%;
+   
+    margin-top: -3rem;
   }
 
   section.skills .container .skill-icon img {
@@ -273,7 +280,7 @@ section .section-heading {
 
 @media (max-width: 500px) {
   #projects {
-    margin-top: -13rem;
+    margin-top: -8rem;
   }
   #projects .section-heading {
     font-size: 2rem;

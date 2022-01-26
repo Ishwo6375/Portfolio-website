@@ -173,7 +173,7 @@ section.skills .container {
 /* ###### Project section CSS ###### */
 
 #projects {
-  padding: 10rem 0;
+  padding: 10rem;
 }
 #projects .item {
   display: flex;
@@ -238,18 +238,17 @@ section .section-heading {
   font-family: "Montserrat";
   margin-bottom: 1rem;
 }
-.btn-2 {
+.buttons .btn-2 {
   color: rgb(238, 222, 5);
   margin-left: 10px;
-
   padding: 15px;
   width: 10rem;
-  margin-top: 20px;
+ margin-top: 50px;
   border-radius: 0.7rem;
   background-color: var(--color-dark);
 }
 
-.btn-2 i {
+.buttons .btn-2 i {
   color: white;
   margin-right: 0.5rem;
 }
@@ -258,9 +257,12 @@ section .section-heading {
   font-size: 1.6rem;
   margin-bottom: 2rem;
 }
-#projects .item .right .project-desc {
+#projects .item .right .project-desc ul li {
   color: var(--secondary-gray);
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
+  font-family: 1.8rem;
+  list-style-type: circle;
+
 }
 
 /* ####### Project section media queries ### */
@@ -298,22 +300,24 @@ section .section-heading {
     font-size: 1.1rem;
     text-align: center;
   }
-
-  #projects .container .all-items .item .right .project-desc {
+#projects .item .right .project-desc ul li {
     font-size: 0.9rem;
     font-weight: 500;
     text-align: center;
     overflow: hidden;
+    list-style: circle;
+    font-size: 1.1rem;
   }
 
   .buttons {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: -3rem;
   }
 
   .btn-2 {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
 }
 

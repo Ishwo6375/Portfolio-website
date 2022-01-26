@@ -261,7 +261,7 @@ section.landing .profile-area .outer-circle span {
   border-radius: 50%;
   box-shadow: 0 0 1rem light-black;
   position: absolute;
-  background: rgb(29, 28, 28);
+  background: rgb(26, 25, 25);
   color: var(--color-light);
   display: flex;
   justify-content: center;

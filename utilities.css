@@ -14,7 +14,10 @@
 }
 
 section.about {
-  background: var(--color-black);
+  	background: linear-gradient(rgba(14, 15, 15, 0.5), rgba(19, 13, 22, 1)),
+    url("https://images.pexels.com/photos/414144/pexels-photo-414144.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-size: cover;
+  background-position: center;
 }
 
 /* ####### About Section css */
@@ -142,9 +145,8 @@ section.skills .container {
 }
 
 @media (max-width: 500px) {
-  section.about {
-    margin-top: -5rem;
-  }
+ 
+  
 
   section.about .container {
     grid-template-columns: 1fr;

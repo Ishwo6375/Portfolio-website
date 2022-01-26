@@ -153,6 +153,10 @@ section.landing {
   position: relative;
   top: 5rem;
   padding-bottom: 14rem;
+  	background: linear-gradient(rgba(14, 15, 15, 0.5), rgba(19, 13, 22, 1)),
+    url("https://images.pexels.com/photos/450301/pexels-photo-450301.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-size: cover;
+  background-position: center;
   
  
 }
@@ -172,7 +176,7 @@ section.landing .socials {
 
 section.landing .socials a {
   font-size: 1.4rem;
-  background: var(--color-black);
+  background: transparent;
   padding: 0.3rem;
   color: white;
   height: 2rem;
@@ -257,7 +261,7 @@ section.landing .profile-area .outer-circle span {
   border-radius: 50%;
   box-shadow: 0 0 1rem light-black;
   position: absolute;
-  background: var(--color-black);
+  background: rgb(29, 28, 28);
   color: var(--color-light);
   display: flex;
   justify-content: center;
